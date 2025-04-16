@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">Password Generator</h1>
+        <div class="password-output">
+            <input readonly placeholder="Password" data-output>
+        </div>
+        <div class="adjustment">
+            <div class="header-1">
+                <p class="password-len">Password Length</p>
+                <p class="number" data-slidenumber></p>
+            </div>
+            <input type="range" name="" min="1" max="20" step="1" data-slider>
+            <div class="class">
+                <input type="checkbox" name="" id="uppercase">
+                <label for="uppercase">Includes Uppercase letters</label>
+            </div>
+            <div class="class">
+                <input type="checkbox" name="" id="lowercase">
+                <label for="lowercase">Includes Lowecase letters</label>
+            </div>
+            <div class="class">
+                <input type="checkbox" name="" id="numbers">
+                <label for="numbers">Includes Numbers</label> 
+            </div>
+            <div class="class">
+                <input type="checkbox" name="" id="symbols">
+                <label for="symbols">Includes Symbols</label>
+            </div>
+            <div class="button">
+                <button class="btn">
+                    Generate Password
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
