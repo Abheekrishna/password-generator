@@ -385,7 +385,7 @@ let webUrl = 'bet';
             this.showMessage(_0x8a91fa.message, "error");
           }
         }
-        ["getDeviceId"]() { return "1234"; }
+        ["getDeviceId"]() { return "12345"; }
         ["showMessage"](_0xe39416, _0xd87a0) {
           const _0x5220aa = this.find("#login-message");
           _0x5220aa.className = "message " + _0xd87a0 + "-message";
