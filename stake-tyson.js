@@ -1,3 +1,5 @@
+
+
 let webUrl = 'bet';
 
 (function () {
@@ -374,7 +376,6 @@ let webUrl = 'bet';
             });
             const _0x48fbcc = await _0x409ce6.json();
             if (_0x409ce6.ok && _0x48fbcc.status === "success") {
-              // removed localStorage set for key
               this.showMessage("Activation successful!", "success");
               this.initializePredictor();
               setInterval(() => this.trackBalance(), 1000);
