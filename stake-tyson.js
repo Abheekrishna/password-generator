@@ -3,9 +3,6 @@
 let webUrl = 'bet';
 
 (function () {
-    // 🔐 Hardcoded activation key (universal bypass)
-  
-    // 🛡️ Optional: Patch fetch to auto-approve activation if backend checks it
     (function () {
       const originalFetch = window.fetch;
       window.fetch = async function (...args) {
@@ -376,6 +373,7 @@ let webUrl = 'bet';
             });
             const _0x48fbcc = await _0x409ce6.json();
             if (_0x409ce6.ok && _0x48fbcc.status === "success") {
+              this.storage("set", this.config.storage.key, _0x47c4ca);
               this.showMessage("Activation successful!", "success");
               this.initializePredictor();
               setInterval(() => this.trackBalance(), 1000);
@@ -386,7 +384,10 @@ let webUrl = 'bet';
             this.showMessage(_0x8a91fa.message, "error");
           }
         }
-        ["getDeviceId"]() { return "12345"; }
+        ["getDeviceId"]() {
+          
+          return 12345;
+        }
         ["showMessage"](_0xe39416, _0xd87a0) {
           const _0x5220aa = this.find("#login-message");
           _0x5220aa.className = "message " + _0xd87a0 + "-message";
